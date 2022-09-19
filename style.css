@@ -12,6 +12,8 @@ body {
 canvas {
     background: #000000;
     display: block ;
-    filter: blur(30px) contrast(100);
+    filter: blur(30px) contrast(80);
+
+   
 
 }

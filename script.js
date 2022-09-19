@@ -2,8 +2,9 @@ const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-ctx.fillStyle = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
-
+ctx.fillStyle   = '#f153cc';
+ //ctx.fillStyle = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+console.log(ctx.fillStyle);
 class Ball {
     constructor(effect) {
         this.effect = effect;
@@ -91,7 +92,7 @@ animate();
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    ctx.fillStyle = 'white';
+    ctx.fillStyle   = '#f153cc';
     effect.reset(canvas.width, canvas.height);
 });
 
